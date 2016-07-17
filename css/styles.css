@@ -1,0 +1,50 @@
+body {
+  font-family: Capita, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid #9B9B9B;
+}
+
+h1 {
+  font-size: 44px;
+  text-align: center;
+  margin: 40px 0;
+  color: #25283D;
+}
+
+p {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.lesson {
+  font-size: 21px;
+  color: #25283D;
+}
+
+span {
+  margin: 0 5px;
+}
+
+.date {
+  color: #9B9B9B;
+}
+
+@media screen and (min-width: 774px) {
+  .centered {
+    width: 50%;
+  }
+}
+
+h1:hover, a:hover {
+  color: #3C7A89;
+}

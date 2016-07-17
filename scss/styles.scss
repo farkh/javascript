@@ -1,0 +1,44 @@
+$light-grey: #9B9B9B;
+$dark-blue: #25283D;
+$blue-green: #3C7A89;
+
+body {
+  font-family: Capita, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.centered {
+  margin: 0 auto;
+}
+header {
+  border-bottom: 1px solid $light-grey;
+}
+h1 {
+  font-size: 44px;
+  text-align: center;
+  margin: 40px 0;
+  color: $dark-blue;
+}
+p {
+  display: inline-block;
+  font-size: 15px;
+}
+.lesson {
+  font-size: 21px;
+  color: $dark-blue;
+}
+span {
+  margin: 0 5px;
+}
+.date {
+  color: $light-grey;
+}
+@media screen and (min-width: 774px) {
+  .centered {
+    width: 50%;
+  }
+}
+h1:hover, a:hover {
+  color: $blue-green;
+}
