@@ -6,6 +6,9 @@ a {
   text-decoration: none;
 }
 
+.head-link {
+  color: #25283D;
+} 
 .centered {
   margin: 0 auto;
 }
@@ -18,7 +21,6 @@ h1 {
   font-size: 44px;
   text-align: center;
   margin: 40px 0;
-  color: #25283D;
 }
 
 p {
