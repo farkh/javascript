@@ -1,12 +1,17 @@
 "use strict"
 
-/*
 function Article() {
+  this.created = new Date();
   Article.count++;
-} 
+
+  Article.last = this.created;
+}
 
 Article.count = 0;
-Article.DEFAULT_FORMAT = "html";
+
+Article.showStats = function() {
+  alert('Number: ' + this.count + '. Last: ' + this.last);
+} 
 
 Article.showCount = function() {
   alert(this.count);
@@ -14,8 +19,11 @@ Article.showCount = function() {
 
 new Article();
 new Article();
-Article.showCount();
-*/
+
+Article.showStats();
+
+new Article();
+Article.showStats();
 
 function Journal(date) {
   this.date = date;
@@ -51,3 +59,30 @@ function findMin(journals) {
 
 //F A C T O R Y  M E T H O D S
 
+function User() {
+  this.sayHi = function() {
+    alert("Hi, " + this.name);
+  };
+} 
+
+User.createAnonymous = function() {
+  var user = new User;
+  user.name = 'Anonymous';
+  return user;
+};
+
+User.createFromData = function(userData) {
+  var user = new User;
+  user.name = userData.name;
+  user.age = userData.age;
+  return user;
+};
+
+var guest = User.createAnonymous();
+//guest.sayHi();
+
+var knownUser = User.createFromData({
+  name: 'Ainur',
+  age: 18
+});
+//knownUser.sayHi();
